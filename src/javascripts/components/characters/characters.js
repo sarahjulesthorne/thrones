@@ -1,3 +1,5 @@
+import './characters.scss';
+
 import data from '../../helpers/data/character-data';
 import util from '../../helpers/utils';
 
@@ -5,9 +7,9 @@ let characters = [];
 const domStringBuilder = () => {
   let domString = '';
   characters.forEach((char) => {
-    domString += '<div>';
+    domString += `<div class="house-${char.house.toLowerCase()}">`;
     domString += '<div class="img-holder">';
-    domString += `<img src=${char.imageUrl} />`;
+    domString += `<img src=${char.imageUrl} alt="image of ${char.name}"/>`;
     domString += '</div>';
     domString += `<h2 class="char-name">${char.name}</h2>`;
     domString += '</div>';
