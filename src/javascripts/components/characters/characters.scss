@@ -1,27 +1,37 @@
 @import '../../../styles/_colors';
 @import '../../../styles/_variables';
 
+// called container div and added flex styling to it to determine grid system of nested cards
 #characters {
   display: flex;
   flex-flow: row wrap;
 
+  //set styles on character cards to arrange them within container div and control width and border
 %char {
     width: 18%;
     margin: 1%;
     box-shadow: $box-shadow;
 
+    //set fixed height, removed overflow, and created relative position for div holding image
     .img-holder {
       position: relative;
       height: 200px;
 overflow: hidden;    }
+
+//set to fill containing div and always appear within its container
 img {
   position: absolute;
   width: 100%;
 }
   }
+
+  //center text for character name
   .char-name {
     text-align: center;
   }
+
+  //used extension to change heading font color for title
+  //same method used for each house by class
   .house-stark {
     @extend %char;
     h2 {
