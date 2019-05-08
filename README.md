@@ -5,7 +5,7 @@ Used basic domStringBuilder, print function, and axios data retrieval to build s
 Used SASS to color code cards to feature titles with font colors in accordance with house  
 Used JSON to store data used in project  
 ## Screenshots  
-![]()  
+![Screenshot of page showing title and rows of five cards each with characters' names and pictures](https://raw.githubusercontent.com/sarahjulesthorne/thrones/master/src/assets/images/final-screenshot.png "Screenshot of page showing title and rows of five cards each with characters' names and pictures")  
 ## Installation Instructions  
 * Clone down this repo  
 * At the root of the project, run `npm install`  
